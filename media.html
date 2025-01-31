@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            background-color: rgb(253, 250, 243);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        h1 {
+         text-align: center;
+         text-decoration: underline;
+         color: brown;
+        }
+
+        h2, .media {
+            margin: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>USING ALL THE MEDIA ELEMENTS IN HTML </h1>
+    <h2>Picture</h2>
+    <picture class="media">
+        <source media="(min-width:1024px)" srcset="./Assets/20240328_122850.jpg">
+        <source media="(min-width:700px )" srcset="./Assets/20241212_133054.jpg">
+        <source media="(min-width:400px)" srcset="./Assets/20240613_105311.jpg">
+        <img src="./Assets/20240328_122850.jpg" alt="A nice image" width="200px">
+    </picture>
+    <h2>Video</h2>
+    <video class="media" width="300px" height="200px" controls>
+        <source src="./Assets/VID-20250127-WA0003.mp4" type="video/mp4">
+    </video>
+    <h2>Audio</h2>
+    <audio controls class="media"
+    src="./Assets/Recording.m4a"></audio>
+</body>
+</html>
